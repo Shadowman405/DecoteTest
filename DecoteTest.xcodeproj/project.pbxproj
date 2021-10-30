@@ -18,6 +18,9 @@
 		BF075737272D9E2D00888D55 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF075734272D9E2D00888D55 /* sound-rise.mp3 */; };
 		BF075742272DAD1C00888D55 /* Constnant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF075741272DAD1C00888D55 /* Constnant.swift */; };
 		BF419B46272DBC5500088D07 /* HideKboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419B45272DBC5500088D07 /* HideKboardExtension.swift */; };
+		BF419B48272DC0B400088D07 /* BackgroundImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419B47272DC0B400088D07 /* BackgroundImgView.swift */; };
+		BF419B4A272DE75900088D07 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419B49272DE75900088D07 /* NewTaskItemView.swift */; };
+		BF419B4C272DEB8B00088D07 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419B4B272DEB8A00088D07 /* BlankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		BF075734272D9E2D00888D55 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		BF075741272DAD1C00888D55 /* Constnant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constnant.swift; sourceTree = "<group>"; };
 		BF419B45272DBC5500088D07 /* HideKboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKboardExtension.swift; sourceTree = "<group>"; };
+		BF419B47272DC0B400088D07 /* BackgroundImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImgView.swift; sourceTree = "<group>"; };
+		BF419B49272DE75900088D07 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		BF419B4B272DEB8A00088D07 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +72,11 @@
 		BF07571D272D9DBF00888D55 /* DecoteTest */ = {
 			isa = PBXGroup;
 			children = (
+				BF07571E272D9DBF00888D55 /* DecoteTestApp.swift */,
 				BF07573C272D9E7600888D55 /* Utility */,
 				BF07573B272D9E6E00888D55 /* Extension */,
 				BF07573A272D9E4C00888D55 /* Model */,
 				BF075738272D9E3100888D55 /* Sound */,
-				BF07571E272D9DBF00888D55 /* DecoteTestApp.swift */,
 				BF075739272D9E4200888D55 /* View */,
 				BF075722272D9DCE00888D55 /* Assets.xcassets */,
 				BF07572C272D9DCE00888D55 /* Info.plist */,
@@ -101,6 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				BF075720272D9DBF00888D55 /* ContentView.swift */,
+				BF419B47272DC0B400088D07 /* BackgroundImgView.swift */,
+				BF419B49272DE75900088D07 /* NewTaskItemView.swift */,
+				BF419B4B272DEB8A00088D07 /* BlankView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,8 +215,11 @@
 				BF075742272DAD1C00888D55 /* Constnant.swift in Sources */,
 				BF419B46272DBC5500088D07 /* HideKboardExtension.swift in Sources */,
 				BF075721272D9DBF00888D55 /* ContentView.swift in Sources */,
+				BF419B4C272DEB8B00088D07 /* BlankView.swift in Sources */,
 				BF07571F272D9DBF00888D55 /* DecoteTestApp.swift in Sources */,
 				BF07572B272D9DCE00888D55 /* DecoteTest.xcdatamodeld in Sources */,
+				BF419B48272DC0B400088D07 /* BackgroundImgView.swift in Sources */,
+				BF419B4A272DE75900088D07 /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

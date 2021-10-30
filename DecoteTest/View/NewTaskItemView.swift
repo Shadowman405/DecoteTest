@@ -74,6 +74,7 @@ struct NewTaskItemView: View {
     }
 }
 
+
 struct NewTaskItemView_Previews: PreviewProvider {
     static var previews: some View {
         NewTaskItemView(isShowing: .constant(true))

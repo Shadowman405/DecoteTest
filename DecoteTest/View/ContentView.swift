@@ -62,6 +62,8 @@ struct ContentView: View {
                         
                         Button(action: {
                             isDarkMode.toggle()
+                            playSound(sound: "sound-tap", type: "mp3")
+                            feedback.notificationOccurred(.success)
                         }, label: {
                             Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
                                 .resizable()
@@ -76,6 +78,8 @@ struct ContentView: View {
                     //MARK: - New task Button
                     Button(action: {
                         showNewTaskItem = true
+                        playSound(sound: "sound-ding", type: "mp3")
+                        feedback.notificationOccurred(.success)
                     }, label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 30, weight: .semibold, design: .rounded))
@@ -100,9 +104,14 @@ struct ContentView: View {
                     .padding(.vertical, 0)
                     .frame(maxWidth: 640)
                 } //vstack
+                .blur(radius: showNewTaskItem ? 8.0 : 0, opaque: false)
+                .transition(.move(edge: .bottom))
+                .animation(.easeOut(duration: 0.5))
                 //MARK: - New Task Item
                 if showNewTaskItem {
-                    BlankView()
+                    BlankView(
+                        backgroundColor: isDarkMode ? Color.black : Color.gray,
+                        backgroundOpacity: isDarkMode ? 0.3 : 0.5)
                         .onTapGesture {
                             withAnimation {
                                 showNewTaskItem = false
@@ -117,7 +126,9 @@ struct ContentView: View {
             }
             .navigationBarTitle("Daily tasks", displayMode: .large)
             .navigationBarHidden(true)
-            .background(BackgroundImgView())
+            .background(BackgroundImgView()
+                            .blur(radius: showNewTaskItem ? 8.0 : 0, opaque: false)
+            )
             .background(backgroundGradient.ignoresSafeArea(.all))
         }
         .navigationViewStyle(StackNavigationViewStyle())

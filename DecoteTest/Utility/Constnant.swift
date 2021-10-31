@@ -23,3 +23,4 @@ var backgroundGradient: LinearGradient {
 }
 
 //Ux
+let feedback = UINotificationFeedbackGenerator()

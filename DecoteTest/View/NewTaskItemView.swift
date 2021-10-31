@@ -51,13 +51,23 @@ struct NewTaskItemView: View {
                     .background(isDarkMode ? Color(UIColor.tertiarySystemBackground) : Color(UIColor.secondarySystemBackground))
                     .cornerRadius(10)
                 
-                Button(action: {addItem()}, label: {
+                Button(action: {
+                        addItem()
+                    playSound(sound: "sound-ding", type: "mp3")
+                    feedback.notificationOccurred(.success)
+                    
+                }, label: {
                     Spacer()
                     Text("SAVE")
                         .font(.system(size: 24, weight: .bold, design: .rounded))
                     Spacer()
                 })
                 .disabled(isButtonDisabled)
+                .onTapGesture {
+                    if isButtonDisabled{
+                        playSound(sound: "sound-tap", type: "mp3")
+                    }
+                }
                 .padding()
                 .foregroundColor(.white)
                 .background(isButtonDisabled ? Color.blue : Color.pink)

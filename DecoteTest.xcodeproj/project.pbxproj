@@ -21,6 +21,8 @@
 		BF419B48272DC0B400088D07 /* BackgroundImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419B47272DC0B400088D07 /* BackgroundImgView.swift */; };
 		BF419B4A272DE75900088D07 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419B49272DE75900088D07 /* NewTaskItemView.swift */; };
 		BF419B4C272DEB8B00088D07 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF419B4B272DEB8A00088D07 /* BlankView.swift */; };
+		BF60A7E8272F32CF00A247E8 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A7E7272F32CF00A247E8 /* ListRowItemView.swift */; };
+		BF60A7EB272F366100A247E8 /* CheckBoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A7EA272F366100A247E8 /* CheckBoxStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		BF419B47272DC0B400088D07 /* BackgroundImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImgView.swift; sourceTree = "<group>"; };
 		BF419B49272DE75900088D07 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
 		BF419B4B272DEB8A00088D07 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		BF60A7E7272F32CF00A247E8 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		BF60A7EA272F366100A247E8 /* CheckBoxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				BF07571E272D9DBF00888D55 /* DecoteTestApp.swift */,
+				BF60A7E9272F365000A247E8 /* Style */,
 				BF07573C272D9E7600888D55 /* Utility */,
 				BF07573B272D9E6E00888D55 /* Extension */,
 				BF07573A272D9E4C00888D55 /* Model */,
@@ -110,6 +115,7 @@
 				BF419B47272DC0B400088D07 /* BackgroundImgView.swift */,
 				BF419B49272DE75900088D07 /* NewTaskItemView.swift */,
 				BF419B4B272DEB8A00088D07 /* BlankView.swift */,
+				BF60A7E7272F32CF00A247E8 /* ListRowItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +143,14 @@
 				BF075741272DAD1C00888D55 /* Constnant.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		BF60A7E9272F365000A247E8 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				BF60A7EA272F366100A247E8 /* CheckBoxStyle.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +231,9 @@
 				BF075721272D9DBF00888D55 /* ContentView.swift in Sources */,
 				BF419B4C272DEB8B00088D07 /* BlankView.swift in Sources */,
 				BF07571F272D9DBF00888D55 /* DecoteTestApp.swift in Sources */,
+				BF60A7E8272F32CF00A247E8 /* ListRowItemView.swift in Sources */,
 				BF07572B272D9DCE00888D55 /* DecoteTest.xcdatamodeld in Sources */,
+				BF60A7EB272F366100A247E8 /* CheckBoxStyle.swift in Sources */,
 				BF419B48272DC0B400088D07 /* BackgroundImgView.swift in Sources */,
 				BF419B4A272DE75900088D07 /* NewTaskItemView.swift in Sources */,
 			);

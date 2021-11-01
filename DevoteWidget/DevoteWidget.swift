@@ -104,7 +104,7 @@ struct DevoteWidget: Widget {
             DevoteWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Devote Launcher")
-        .description("Personal task manager App ")
+        .description("Personal task manager App!")
     }
 }
 
